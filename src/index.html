@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+    <!-------------------- head -------------------->
+
+@@include('html/_head.html', {
+  'title': ''
+})
+
+  <body class="page__body  page-body">
+    <div class="page__wrapper">
+
+
+      <!----------------- svg-sprite ----------------->
+<!--       <div class="visually-hidden">
+        @@include('img/svg-sprite/sprite.svg')
+      </div>
+ -->
+      <!------------------- header ------------------->
+      @@include('html/_header.html', {})
+
+<!--         'link-logo-index': '',
+
+        'link-about': '',
+        'link-service': 'href="#"',
+        'link-work': 'href="#"',
+        'link-contacts': 'href="#"',
+        'link-blog': 'href="#"',
+        'link-contact': 'href="#"',
+
+        'active-about': 'main-nav__link--active',
+        'active-service': '',
+        'active-work': '',
+        'active-blog': '',
+        'active-contact': '',
+ -->
+
+      <!------------------- content ------------------>
+
+      <main class="page__main  page-main">
+
+        <h1 class="visually-hidden"></h1>
+
+
+      </main>
+
+
+    <!------------------- footer ------------------->
+    @@include('html/_footer.html', {})
+
+    <!---------------- modal-windows --------------->
+
+    </div>  <!-- page-body__wrapper -->
+
+    <!------------- script-connection -------------->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="js/main.min.js"></script>
+
+  </body>
+</html>

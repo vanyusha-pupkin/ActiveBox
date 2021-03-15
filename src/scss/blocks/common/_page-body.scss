@@ -1,8 +1,5 @@
 .page-body {
-  position: relative;
-
   min-width: $width-min;
-  height: 100%;
 
   font-family: $font-family-base;
   font-weight: $font-weight-base;
@@ -11,5 +8,4 @@
   color: $font-color-base;
 
   background-color: $body-bg-color;
-
 }

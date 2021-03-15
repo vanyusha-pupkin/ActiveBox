@@ -1,11 +1,9 @@
 
 // font
 
-
 // OpenSans
 @include font-face('OpenSans','OpenSans-Regular', 'OpenSans', 'OpenSans-Regular', 400, normal);
 @include font-face('OpenSans','OpenSans-Bold', 'OpenSans Bold', 'OpenSans-Bold', 700, normal);
-
 
 // Cardo
 @include font-face('Cardo','Cardo-Italic', 'Cardo Italic', 'Cardo-Italic', 400, italic);

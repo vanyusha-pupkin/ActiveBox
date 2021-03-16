@@ -55,9 +55,23 @@
 }
 
 
-//Адаптивное шрифт
-@mixin adaptiv-font($pcSize, $mobSize) {
+//Адаптивный шрифт
+@mixin adaptiv-font($pcSize, $mobSize, $maxSize) {
   $addSize: $pcSize - $mobSize;
-  $maxWidth: $w-max - $w-min;
-  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - #{$width-min}) / #{$maxWidth}));
+  @if $maxSize==1 {
+    //Только если меньше контейнера
+    font-size: $pcSize + px;
+    @media (max-width: #{$w-max + px}) {
+      font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - #{$width-min}) / #{$w-max - $w-min}));
+    }
+  } @else if $maxSize==2 {
+    //Только если больше контейнера
+    font-size: $pcSize + px;
+    @media (min-width: #{$w-max + px}) {
+      font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - #{$width-min}) / #{$w-layout - $w-min}));
+    }
+  } @else {
+    //Всегда
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - #{$width-min}) / #{$w-layout - $w-min}));
+  }
 }

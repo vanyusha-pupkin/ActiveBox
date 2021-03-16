@@ -18,7 +18,7 @@ $padding-bp-1:      $p-bp-1 + px;
 $padding-width-max: $p-w-max + px;
 
 //SIZE
-// $w-layout: 1920;
+$w-layout: 1920;
 $w-max: 1170;
 // $w-bp-1: 970;
 // $w-bp-2: 750;
@@ -36,9 +36,9 @@ $width-min: $w-min + px;
 
 //BREAK POINT - mobile first
 $bp-1: $w-max + ($p-w-max * 2);
-// $bp-2: 993;
-// $bp-3: 768;
-// $bp-4: 480;
+$bp-2: 993;
+$bp-3: 768;
+$bp-4: 480;
 
 
 //RETINA

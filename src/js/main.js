@@ -9,7 +9,7 @@
 //@@include('modules/_main-nav.js');
 
 //открытие закрытие выпадающего меню
-// @@include('modules/_hamburger.js');
+@@include('modules/_hamburger.js');
 
 //переключение слайдов
 //@@include('modules/_slider.js');

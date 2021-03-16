@@ -630,7 +630,7 @@ hamburger.addEventListener('click', function() {
 // ;
 
 //img-to-bg
-
+// 
 // для webp
 function imgToBbWebp(){
   let imgToBG=document.querySelectorAll(".img-to-bg");
